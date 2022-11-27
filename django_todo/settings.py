@@ -1,6 +1,7 @@
 import os
 if os.path.exists("env.py"):
     import env
+
 """
 Django settings for django_todo project.
 
@@ -101,7 +102,7 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
-])
+]
 
 
 
@@ -129,3 +130,5 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+DEBUG = True
