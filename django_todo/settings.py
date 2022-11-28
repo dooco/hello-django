@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+# SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 
 ALLOWED_HOSTS = ['dooco-django-todo-app.herokuapp.com']
