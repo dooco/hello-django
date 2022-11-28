@@ -1,7 +1,8 @@
 from pathlib import Path
 import os
 import dj_database_url
-import env
+if os.path.isfile("env.py"):
+    import env
 
 """
 Django settings for django_todo project.
@@ -30,7 +31,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 
-ALLOWED_HOSTS = ['https://dooco-django-todo-app.herokuapp.com/']
+ALLOWED_HOSTS = ['dooco-django-todo-app.herokuapp.com']
 
 
 # Application definition
